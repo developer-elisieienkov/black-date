@@ -284,6 +284,16 @@ template {
 
 [hidden] {
   display: none !important; }
+@media (max-width: 960px) {
+  .container {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .card {
+    width: 48% !important; }
+    .card__image img {
+      width: 100% !important; } }
+
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -646,7 +656,9 @@ header {
     overflow: hidden;
     border-radius: 5px 5px 0 0; }
     .card__image img {
-      height: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
+      width: 100%;
       -webkit-filter: grayscale(1);
       filter: grayscale(1);
       -webkit-transition: ease 0.3s;
