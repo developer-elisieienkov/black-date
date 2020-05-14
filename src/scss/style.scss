@@ -1,0 +1,464 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway|Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+@import "reboot";
+$main-font-family: Roboto;
+$nav-header-other-bg-color: #cca0ff;
+$brand-color: #0c0c0c;
+$title-font-family: Raleway;
+$transition: ease 0.3s;
+@mixin pixelsSize($width, $height) {
+  width: $width + px;
+  height: $height + px;
+}
+
+@mixin brandText {
+  font-family: "Lobster Two";
+  font-size: 30px;
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  background: white;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none !important;
+  outline: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+input,
+button {
+  outline: none !important;
+  box-shadow: none !important;
+  cursor: pointer;
+}
+.container {
+  display: flex;
+  padding: 15px;
+  max-width: 1140px;
+  flex: 1 1 auto;
+  margin: auto;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+header {
+  position: absolute;
+  width: 100%;
+}
+.header {
+  &-nav {
+    background: $nav-header-other-bg-color;
+    &__list {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin-bottom: 0;
+      &__item {
+        margin-bottom: 0;
+        margin-right: 40px;
+        text-transform: uppercase;
+        font-family: $main-font-family;
+        font-weight: 700;
+        a {
+          color: white;
+          transition: $transition;
+        }
+        &:hover,
+        &.active {
+          a {
+            color: $brand-color;
+          }
+        }
+        &:last-child {
+          text-transform: none;
+        }
+      }
+    }
+    .container {
+      height: 100px;
+      align-items: center;
+    }
+  }
+}
+.logo {
+  display: flex;
+  align-items: center;
+  &__image {
+    @include pixelsSize(150, 100);
+    margin-right: 10px;
+  }
+  &__brand {
+    @include brandText;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: $brand-color;
+    text-align: right;
+  }
+  &__description {
+    font-family: $main-font-family;
+    font-size: 15px;
+    margin-top: 0px;
+    color: #e32d89;
+    text-align: right;
+    width: 200px;
+  }
+}
+.home-heading {
+  background: url("images/tim-foster-hRZ5s-IPCWE-unsplash.jpg") center no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-end;
+}
+.underhead,
+.footer-upper {
+  background: #363636;
+  .container {
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: "Noto Sans JP";
+
+    color: #cca0ff;
+  }
+  &__description {
+    font-size: 20px;
+    @extend .footer-upper__title;
+    color: #6c757d;
+  }
+}
+.breadcrumbs {
+  background: rgba(50, 13, 110, 0.8);
+  &-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    &__item {
+      margin-right: 30px;
+      font-family: "Noto Sans JP", cursive;
+      font-weight: 200;
+      font-size: 12px;
+      color: #d9d9d9;
+      &:after {
+        content: "/";
+        margin-left: 30px;
+      }
+      &:last-child:after {
+        content: "";
+      }
+    }
+  }
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 20px;
+  background: rgba(24, 6, 24, 0.4);
+  &__heading {
+    font-family: $title-font-family;
+    color: white;
+    font-size: 40px;
+    font-weight: 800;
+    width: 50vw;
+    text-align: center;
+    span {
+      color: #cca0ff;
+    }
+  }
+  &__description {
+    font-family: $main-font-family;
+    color: white;
+    width: 60vw;
+    text-align: center;
+  }
+}
+.join {
+  height: 70px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  &__button {
+    @include pixelsSize(180, 70);
+    margin: 10px;
+    border: 1px solid $nav-header-other-bg-color;
+    border-radius: 30px;
+    background: rgba(50, 13, 110, 0.5);
+    text-transform: uppercase;
+    @include brandText;
+    color: white;
+    transition: $transition;
+    &:hover {
+      border-color: rgba(50, 13, 110, 1);
+      background: rgba(50, 13, 110, 1);
+    }
+  }
+}
+.article {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  &__image {
+    width: 500px;
+    margin-right: 50px;
+  }
+  &__caption {
+    display: flex;
+    flex-direction: column;
+    &__title {
+      font-family: $title-font-family;
+      font-size: 30px;
+      font-weight: 900;
+      color: rgba(50, 13, 110, 1);
+    }
+    &__description {
+      margin-bottom: 0;
+      font-size: 20px;
+      font-weight: 700;
+      font-family: "Noto Sans JP";
+      color: #6c757d;
+    }
+  }
+  &-reverse {
+    background: rgba(24, 6, 24, 0.4);
+    .container {
+      flex-direction: row-reverse;
+    }
+    .article__image {
+      margin-right: 0;
+      margin-left: 50px;
+    }
+    .article__caption {
+      text-align: right;
+      &__description {
+        color: #363636;
+      }
+    }
+  }
+}
+.button-container {
+  justify-content: center;
+  padding-bottom: 60px;
+  &__button {
+    font-family: $title-font-family;
+    font-size: 30px;
+    color: white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    background: rgba(24, 6, 24, 0.4);
+    border: none;
+    width: 30vw;
+    height: 60px;
+    transition: $transition;
+    &:hover {
+      background: rgba(24, 6, 24, 0.8);
+      color: white;
+    }
+  }
+}
+.reviews {
+  background: #dffff3;
+  padding-top: 25px;
+  .container {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+.card {
+  flex-direction: column;
+  flex: 0 0 auto;
+  width: 24%;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  &__image {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+    img {
+      height: 100%;
+      filter: grayscale(1);
+      transition: $transition;
+    }
+  }
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background: #e1fcff;
+    border-radius: 0 0 5px 5px;
+    transition: $transition;
+    &__author {
+      background: rgba(24, 6, 24, 0.1);
+      font-family: "Noto Sans JP";
+      font-size: 17px;
+      color: #363636;
+      transition: $transition;
+      &__name {
+        color: #cca0ff;
+        font-family: Roboto;
+        font-size: 20px;
+        width: 100%;
+        margin-bottom: 0;
+      }
+      span:last-child {
+        color: #6c757d;
+      }
+      padding: 5px 15px;
+    }
+    &__title {
+      text-align: center;
+      @extend .article__caption__title;
+      font-size: 25px;
+      margin-bottom: 0;
+    }
+    &__text {
+      text-align: center;
+      color: #6c757d;
+      font-family: "Noto Sans JP";
+      font-size: 18px;
+      padding: 0 15px;
+    }
+    &__button {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+  }
+  &:hover {
+    .card__body__author {
+      background: rgba(24, 6, 24, 0.3);
+      &__name {
+        color: white;
+      }
+    }
+    .card__body {
+      background: #7dfffc;
+    }
+    img {
+      filter: none;
+    }
+  }
+}
+.read-more {
+  @extend .button-container__button;
+  text-transform: none;
+  width: 60%;
+  font-size: 15px;
+  height: 35px;
+}
+.footer {
+  background: #363636;
+  &-upper {
+    .container {
+      justify-content: space-around;
+      p {
+        text-align: left;
+      }
+    }
+  }
+  &-body {
+    background: rgba(24, 6, 24, 0.4);
+    padding-bottom: 30px;
+    .column {
+      padding-right: 30px;
+      flex: 1 1 auto;
+      min-width: 25%;
+    }
+    &__title {
+      margin-top: 20px;
+      font-family: Roboto;
+      font-size: 25px;
+      color: #3f3940;
+    }
+    &__text {
+      color: #3f3940;
+    }
+    &__link {
+      display: flex;
+      align-items: center;
+      color: #685f68;
+      transition: $transition;
+      margin-bottom: 10px;
+      svg {
+        fill: #3f3940;
+        transition: $transition;
+        width: 20px;
+        margin-right: 20px;
+      }
+      &:hover {
+        color: white;
+        svg {
+          fill: white;
+        }
+      }
+    }
+    &__form {
+      form {
+        position: relative;
+        max-width: 300px;
+      }
+      input {
+        width: 100%;
+        height: 40px;
+        border-radius: 15px;
+        border: none;
+        background: #3d3d50;
+        color: rgb(117, 117, 117);
+        padding: 0 20px;
+        font-size: 20px;
+        font-weight: 500;
+        font-family: "Noto Sans JP";
+      }
+      button {
+        position: absolute;
+        right: -30px;
+        top: 10px;
+        background: transparent;
+        border: none;
+      }
+    }
+  }
+}
+.large-button {
+  width: 230px;
+  height: 70px;
+  border-radius: 15px;
+  border: none;
+  background: #3d3d50;
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: "Noto Sans JP";
+}
+.follow-us-link {
+  fill: #685f68;
+  //fill: #cca0ff;
+  transition: $transition;
+  &:hover {
+    fill: #cca0ff;
+  }
+}
