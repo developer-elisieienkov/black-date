@@ -301,7 +301,7 @@ template {
 @media all and (max-width: 650px) {
   .card {
     width: 100% !important; }
-  .article__image {
+  .article__image img {
     width: 100% !important;
     height: auto !important; } }
 
