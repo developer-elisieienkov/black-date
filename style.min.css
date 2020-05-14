@@ -338,7 +338,11 @@ template {
     -ms-flex-direction: column !important;
     flex-direction: column !important; }
     .header-nav__list__item {
-      margin-bottom: 10px !important; } }
+      margin-bottom: 10px !important; }
+  .recomend .title__heading {
+    width: 90% !important; }
+  .recomend .title__description {
+    width: 90% !important; } }
 
 html {
   -webkit-box-sizing: border-box;
@@ -576,6 +580,9 @@ header .header-nav {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -586,6 +593,8 @@ header .header-nav {
       width: 25%; }
     .title.recomend .title__description {
       width: 40%; }
+    .title.recomend button {
+      margin: 0 20px; }
 
 .join {
   height: 70px;
@@ -677,7 +686,7 @@ header .header-nav {
     .article-reverse .article__caption {
       text-align: right; }
   .article__buttons {
-    width: 100%;
+    width: 80%;
     -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
     justify-content: space-around;
@@ -692,18 +701,6 @@ header .header-nav {
       width: 250px;
       height: 50px;
       margin-top: 20px; }
-  .article .like,
-  .article .message {
-    display: none;
-    top: 50%;
-    margin-top: -20px;
-    position: absolute; }
-  .article .like {
-    left: 35%;
-    margin-left: -20px; }
-  .article .message {
-    left: 65%;
-    margin-left: -20px; }
 
 .button-container {
   -webkit-box-pack: center;
@@ -752,6 +749,7 @@ header .header-nav {
   border-radius: 5px;
   margin-bottom: 20px; }
   .card__image {
+    position: relative;
     height: 200px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -812,6 +810,8 @@ header .header-nav {
       text-align: center;
       font-size: 25px;
       margin-bottom: 0; }
+      .card__body__title.liked {
+        color: #e32d89; }
     .card__body__text {
       text-align: center;
       color: #6c757d;
@@ -830,6 +830,21 @@ header .header-nav {
       margin-bottom: 20px; }
       .card__body__button button {
         padding: 0; }
+    .card__body__subtitle {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      padding: 15px;
+      margin-bottom: 0;
+      font-family: Raleway;
+      color: #363636;
+      font-size: 25px;
+      font-weight: 200; }
   .card:hover .card__body__author {
     background: rgba(24, 6, 24, 0.3); }
     .card:hover .card__body__author__name {
@@ -928,6 +943,8 @@ header .header-nav {
       top: 10px;
       background: transparent;
       border: none; }
+      .footer-body__form button svg {
+        fill: #685f68; }
 
 .large-button {
   width: 230px;
@@ -953,8 +970,20 @@ header .header-nav {
   .personal-info span {
     color: #cca0ff; }
 
+.like {
+  left: 35%;
+  margin-left: -20px; }
+
+.message {
+  left: 65%;
+  margin-left: -20px; }
+
 .like,
 .message {
+  display: none;
+  top: 50%;
+  margin-top: -20px;
+  position: absolute;
   z-index: 9;
   -webkit-transition: ease 0.3s;
   -o-transition: ease 0.3s;
@@ -969,3 +998,38 @@ header .header-nav {
   .like:hover,
   .message:hover {
     fill: #cca0ff; }
+
+.personal-profiles-preview .card {
+  width: 48%; }
+  .personal-profiles-preview .card__image {
+    height: 300px; }
+  .personal-profiles-preview .card img {
+    -webkit-filter: none;
+    filter: none; }
+  .personal-profiles-preview .card:hover .card__image img {
+    -webkit-filter: brightness(0.5);
+    filter: brightness(0.5); }
+  .personal-profiles-preview .card:hover .message,
+  .personal-profiles-preview .card:hover .like {
+    display: block; }
+  .personal-profiles-preview .card__body__text {
+    text-align: left; }
+
+button.on-map {
+  background: transparent;
+  border: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  button.on-map img {
+    width: 40px;
+    height: 40px; }
