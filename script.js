@@ -24,3 +24,25 @@ function scrollHide() {
 
   lastScroll = secondScroll;
 }
+
+var map;
+
+function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: {
+      lat: 32.922082,
+      lng: 130.623257
+    },
+    zoom: 16,
+    disableDefaultUI: false
+  });
+  var marker = new google.maps.Marker({
+    position: {
+      lat: 32.922082,
+      lng: 130.623257
+    },
+    map: map,
+    title: "We Are Here",
+    icon: "images/location(2).svg"
+  });
+}
