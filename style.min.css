@@ -286,17 +286,16 @@ template {
   display: none !important; }
 @media all and (max-width: 400px) {
   .logo {
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center; }
     .logo__image {
-      margin-right: 0 !important; }
+      margin-right: 20px !important;
+      height: 50px !important;
+      width: auto !important; }
     .logo__brand, .logo__description {
-      text-align: center !important; } }
+      display: none; } }
 
 @media all and (max-width: 650px) {
   .title p {
@@ -317,7 +316,13 @@ template {
     body .card__image img {
       width: 100% !important; }
   header {
-    position: relative !important; }
+    position: fixed !important;
+    top: 0;
+    z-index: 99; }
+  .breadcrumbs {
+    position: absolute;
+    top: 125px;
+    width: 100vw; }
   .header-nav .container {
     display: -webkit-box;
     display: -webkit-flex;
@@ -336,9 +341,26 @@ template {
     -webkit-box-direction: normal !important;
     -webkit-flex-direction: column !important;
     -ms-flex-direction: column !important;
-    flex-direction: column !important; }
+    flex-direction: column !important;
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+    height: 0px;
+    opacity: 0; }
     .header-nav__list__item {
       margin-bottom: 10px !important; }
+  .header-nav__toggler {
+    display: block !important; }
+  .feed-reviews,
+  .home-heading {
+    margin-top: 125px; }
+  .home-heading {
+    -webkit-box-pack: end !important;
+    -webkit-justify-content: flex-end !important;
+    -ms-flex-pack: end !important;
+    justify-content: flex-end !important; }
+    .home-heading .title {
+      margin: 100px 0 0 0 !important; }
   .recomend .title__heading {
     width: 90% !important; }
   .recomend .title__description {
@@ -395,10 +417,10 @@ button {
   flex-direction: column; }
 
 .home header {
-  position: absolute;
-  width: 100%; }
+  width: 100vw; }
 
 header .header-nav {
+  width: 100vw;
   background: #cca0ff; }
   header .header-nav__list {
     width: 100%;
@@ -414,7 +436,10 @@ header .header-nav {
     -webkit-justify-content: flex-end;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    -webkit-transition: ease 0.3s;
+    -o-transition: ease 0.3s;
+    transition: ease 0.3s; }
     header .header-nav__list__item {
       margin-bottom: 0;
       margin-right: 40px;
@@ -435,6 +460,24 @@ header .header-nav {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center; }
+  header .header-nav__togglerBlock {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  header .header-nav__toggler {
+    margin-left: 20px;
+    z-index: 999;
+    display: none;
+    width: 40px;
+    height: 40px;
+    background: url(images/multimedia.svg) no-repeat;
+    background-position: center;
+    border: none; }
 
 .logo {
   display: -webkit-box;
@@ -467,7 +510,7 @@ header .header-nav {
 .home-heading {
   background: url(images/tim-foster-hRZ5s-IPCWE-unsplash.jpg) center no-repeat;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 70vh;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -556,8 +599,7 @@ header .header-nav {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin: 60px 0;
   padding: 20px;
   background: rgba(24, 6, 24, 0.4); }
   .title__heading {
@@ -1033,3 +1075,15 @@ button.on-map {
   button.on-map img {
     width: 40px;
     height: 40px; }
+
+.show .header-nav__list {
+  height: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 1;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none; }
