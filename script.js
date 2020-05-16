@@ -1,8 +1,10 @@
 "use strict";
 
-var navToggler = document.querySelector(".header-nav__toggler");
-var navbar = document.querySelector(".header-nav");
-var lastScroll;
+var navToggler = document.querySelector(".header-nav__toggler"),
+    navbar = document.querySelector(".header-nav"),
+    profileCollapsibleSection = document.getElementById("aboutPerson"),
+    profileCollapsingButton = document.getElementById("allInfo"),
+    lastScroll;
 
 function showToggler(togleButton, targetElem, toglingClass) {
   togleButton.onclick = function () {
@@ -11,7 +13,12 @@ function showToggler(togleButton, targetElem, toglingClass) {
 }
 
 showToggler(navToggler, navbar, "show");
-showToggler(allInfo, aboutPerson, "show");
+
+if (profileCollapsibleSection != undefined) {
+  showToggler(profileCollapsingButton, profileCollapsibleSection, "show");
+}
+
+;
 document.addEventListener("scroll", scrollHide);
 document.addEventListener("resize", scrollHide);
 
