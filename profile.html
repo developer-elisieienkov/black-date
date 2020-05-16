@@ -8,30 +8,26 @@
     <meta name="keywords" content="dating, adult dating, date, sex-dating" />
     <link rel="stylesheet" href="style.min.css">
 </head>
-<body class="feed">
+<body>
 <header>
         <nav class="header-nav">
         <div class="container ">
             <div class="header-nav__togglerBlock">
-                <a href="#">
-                    <div class="logo">
-
+                <a href="/" class="logo">
                         <img class="logo__image" src="images/logo.png" alt="logo">
                         <div>
                             <p class="logo__brand">Speed Dating</p>
                             <p class="logo__description">
                                 For Your Expectations</p>
                         </div>
-                    </div>
                 </a>
                 <button class="header-nav__toggler">
                 </button>
             </div>
         <ul class="header-nav__list">
             <li class="header-nav__item "><a href="index.html">Home</a></li>
-            <li class="header-nav__item active"><a href="#">Feed</a></li>
+            <li class="header-nav__item"><a href="feed.html">Back To Feed</a></li>
             <li class="header-nav__item"><a href="#">Find</a></li>
-            <li class="header-nav__item"><a href="#">Premium Features</a></li>
             <li class="header-nav__item"><a href="#">Profile</a></li>
     </ul>
         </div>
@@ -39,8 +35,7 @@
 
 </header>
 <main>
-    <section>
-        <div class="breadcrumbs">
+        <section class="breadcrumbs">
             <div class="container">
                 <ul class="breadcrumbs-list">
                     <li class="breadcrumbs-list__item"><a href="feed.html">Feed</a></li>
@@ -49,16 +44,15 @@
                     </li>
                 </ul>
             </div>
-        </div>
-    </section>
+        </section>
     <section class="underhead">
         <div class="container">
-            <p class="underhead__title">Britney Doe</p>
+            <h1 class="underhead__title">Britney Doe</h1>
         </div>
     </section>
     <article class="article profile-article">
         <div class="container">
-    <div class="article__image">
+    <figure class="article__image ">
         <button class="like">
             <svg xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -71,11 +65,11 @@
             <svg id="bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m18.751 7.499c.192 0 .384.073.53.22.293.293.293.768 0 1.061l-3.001 3c-.293.293-.768.293-1.061 0s-.293-.768 0-1.061l3.001-3.001c.147-.146.339-.219.531-.219z"/><path d="m13 12h-11c-1.105 0-2 .895-2 2v8c0 1.105.895 2 2 2h11c1.105 0 2-.895 2-2v-8c0-1.105-.895-2-2-2zm-.5 10h-10c-.276 0-.5-.224-.5-.5v-5.5h11v5.5c0 .276-.224.5-.5.5z"/><path d="m21 0h-18c-1.654 0-3 1.346-3 3v8.78c.532-.479 1.229-.78 2-.78v-6h20v14c0 .552-.449 1-1 1h-5v2h5c1.654 0 3-1.346 3-3v-16c0-1.654-1.346-3-3-3z"/><path d="m19.25 11c-.195 0-.387-.076-.53-.22l-2.5-2.5c-.214-.215-.279-.537-.163-.817s.39-.463.693-.463h2.5c.414 0 .75.336.75.75v2.5c0 .304-.183.577-.463.693-.093.038-.19.057-.287.057z"/></svg>
         </button>
     <img src="images/michael-dam-mEZ3PoFGs_k-unsplash.jpg" alt="portrait">
-    </div>
-    <div class="article__caption">
-        <p class="article__caption__title">
+    </figure>
+    <aside class="article__aside">
+        <h2 class="article__aside__title">
             Britney Doe
-        </p>
+        </h2>
         <p class="personal-info">26 yo. <br>
             Kansas City,
             Missouri <br>
@@ -99,15 +93,15 @@
                 All Information
             </button>
         </div>
-    </div>
+    </aside>
 </div>
         <section class="about-person" id="aboutPerson">
-            <div class="container">
-                <p class="article__caption__title">
-                    My Interests:
-                </p>
-            </div>
             <section>
+                <div class="container">
+                    <h2 class="article__aside__title">
+                        My Interests:
+                    </h2>
+                </div>
             <div class="container about-person__interests">
                 <figure>
                     <img src="images/woman.svg" alt="Needlework">
@@ -135,12 +129,13 @@
                 </figure>
             </div>
             </section>
-            <div class="container">
-                <p class="article__caption__title">
-                    About Me:
-                </p>
-            </div>
+
             <section>
+                <div class="container">
+                    <h2 class="article__aside__title">
+                        About Me:
+                    </h2>
+                </div>
                 <div class="container about-person__info">
                     <p class="personal-info"><span>Work as :</span> Administrator</p>
                     <p class="personal-info"><span>Relationships :</span> Single</p>
@@ -150,12 +145,12 @@
                     <p class="personal-info"><span>Eyes :</span> Brown</p>
                 </div>
             </section>
-            <div class="container">
-                <p class="article__caption__title">
-                    I'm Looking For:
-                </p>
-            </div>
             <section>
+                <div class="container">
+                    <h2 class="article__aside__title">
+                        I'm Looking For:
+                    </h2>
+                </div>
                 <div class="container">
                     <p class="personal-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam, atque cupiditate dolorem dolorum ducimus eius enim exercitationem facere incidunt nesciunt officiis, praesentium qui quisquam ratione, recusandae reiciendis voluptatem voluptatum!</p>
                 </div>
@@ -172,7 +167,7 @@
                 </div>
             </div>
         <div class="container photo-desk">
-            <div class="photo-desk__photo">
+            <figure class="photo-desk__photo">
     <button class="like">
         <svg xmlns="http://www.w3.org/2000/svg"
              xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -185,8 +180,8 @@
         <svg id="bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m18.751 7.499c.192 0 .384.073.53.22.293.293.293.768 0 1.061l-3.001 3c-.293.293-.768.293-1.061 0s-.293-.768 0-1.061l3.001-3.001c.147-.146.339-.219.531-.219z"/><path d="m13 12h-11c-1.105 0-2 .895-2 2v8c0 1.105.895 2 2 2h11c1.105 0 2-.895 2-2v-8c0-1.105-.895-2-2-2zm-.5 10h-10c-.276 0-.5-.224-.5-.5v-5.5h11v5.5c0 .276-.224.5-.5.5z"/><path d="m21 0h-18c-1.654 0-3 1.346-3 3v8.78c.532-.479 1.229-.78 2-.78v-6h20v14c0 .552-.449 1-1 1h-5v2h5c1.654 0 3-1.346 3-3v-16c0-1.654-1.346-3-3-3z"/><path d="m19.25 11c-.195 0-.387-.076-.53-.22l-2.5-2.5c-.214-.215-.279-.537-.163-.817s.39-.463.693-.463h2.5c.414 0 .75.336.75.75v2.5c0 .304-.183.577-.463.693-.093.038-.19.057-.287.057z"/></svg>
     </button>
     <img src="http://placehold.it/350x230" alt="photo">
-</div>
-            <div class="photo-desk__photo">
+</figure>
+            <figure class="photo-desk__photo">
     <button class="like">
         <svg xmlns="http://www.w3.org/2000/svg"
              xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -199,8 +194,8 @@
         <svg id="bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m18.751 7.499c.192 0 .384.073.53.22.293.293.293.768 0 1.061l-3.001 3c-.293.293-.768.293-1.061 0s-.293-.768 0-1.061l3.001-3.001c.147-.146.339-.219.531-.219z"/><path d="m13 12h-11c-1.105 0-2 .895-2 2v8c0 1.105.895 2 2 2h11c1.105 0 2-.895 2-2v-8c0-1.105-.895-2-2-2zm-.5 10h-10c-.276 0-.5-.224-.5-.5v-5.5h11v5.5c0 .276-.224.5-.5.5z"/><path d="m21 0h-18c-1.654 0-3 1.346-3 3v8.78c.532-.479 1.229-.78 2-.78v-6h20v14c0 .552-.449 1-1 1h-5v2h5c1.654 0 3-1.346 3-3v-16c0-1.654-1.346-3-3-3z"/><path d="m19.25 11c-.195 0-.387-.076-.53-.22l-2.5-2.5c-.214-.215-.279-.537-.163-.817s.39-.463.693-.463h2.5c.414 0 .75.336.75.75v2.5c0 .304-.183.577-.463.693-.093.038-.19.057-.287.057z"/></svg>
     </button>
     <img src="http://placehold.it/350x420" alt="photo">
-</div>
-            <div class="photo-desk__photo">
+</figure>
+            <figure class="photo-desk__photo">
     <button class="like">
         <svg xmlns="http://www.w3.org/2000/svg"
              xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -213,8 +208,8 @@
         <svg id="bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m18.751 7.499c.192 0 .384.073.53.22.293.293.293.768 0 1.061l-3.001 3c-.293.293-.768.293-1.061 0s-.293-.768 0-1.061l3.001-3.001c.147-.146.339-.219.531-.219z"/><path d="m13 12h-11c-1.105 0-2 .895-2 2v8c0 1.105.895 2 2 2h11c1.105 0 2-.895 2-2v-8c0-1.105-.895-2-2-2zm-.5 10h-10c-.276 0-.5-.224-.5-.5v-5.5h11v5.5c0 .276-.224.5-.5.5z"/><path d="m21 0h-18c-1.654 0-3 1.346-3 3v8.78c.532-.479 1.229-.78 2-.78v-6h20v14c0 .552-.449 1-1 1h-5v2h5c1.654 0 3-1.346 3-3v-16c0-1.654-1.346-3-3-3z"/><path d="m19.25 11c-.195 0-.387-.076-.53-.22l-2.5-2.5c-.214-.215-.279-.537-.163-.817s.39-.463.693-.463h2.5c.414 0 .75.336.75.75v2.5c0 .304-.183.577-.463.693-.093.038-.19.057-.287.057z"/></svg>
     </button>
     <img src="http://placehold.it/280x140" alt="photo">
-</div>
-            <div class="photo-desk__photo">
+</figure>
+            <figure class="photo-desk__photo">
                 <button class="like">
                     <svg xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -227,8 +222,8 @@
                     <svg id="bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m18.751 7.499c.192 0 .384.073.53.22.293.293.293.768 0 1.061l-3.001 3c-.293.293-.768.293-1.061 0s-.293-.768 0-1.061l3.001-3.001c.147-.146.339-.219.531-.219z"/><path d="m13 12h-11c-1.105 0-2 .895-2 2v8c0 1.105.895 2 2 2h11c1.105 0 2-.895 2-2v-8c0-1.105-.895-2-2-2zm-.5 10h-10c-.276 0-.5-.224-.5-.5v-5.5h11v5.5c0 .276-.224.5-.5.5z"/><path d="m21 0h-18c-1.654 0-3 1.346-3 3v8.78c.532-.479 1.229-.78 2-.78v-6h20v14c0 .552-.449 1-1 1h-5v2h5c1.654 0 3-1.346 3-3v-16c0-1.654-1.346-3-3-3z"/><path d="m19.25 11c-.195 0-.387-.076-.53-.22l-2.5-2.5c-.214-.215-.279-.537-.163-.817s.39-.463.693-.463h2.5c.414 0 .75.336.75.75v2.5c0 .304-.183.577-.463.693-.093.038-.19.057-.287.057z"/></svg>
                 </button>
                 <img src="http://placehold.it/350x510" alt="photo">
-            </div>
-            <div class="photo-desk__photo">
+            </figure>
+            <figure class="photo-desk__photo">
                 <button class="like">
                     <svg xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -241,8 +236,8 @@
                     <svg id="bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m18.751 7.499c.192 0 .384.073.53.22.293.293.293.768 0 1.061l-3.001 3c-.293.293-.768.293-1.061 0s-.293-.768 0-1.061l3.001-3.001c.147-.146.339-.219.531-.219z"/><path d="m13 12h-11c-1.105 0-2 .895-2 2v8c0 1.105.895 2 2 2h11c1.105 0 2-.895 2-2v-8c0-1.105-.895-2-2-2zm-.5 10h-10c-.276 0-.5-.224-.5-.5v-5.5h11v5.5c0 .276-.224.5-.5.5z"/><path d="m21 0h-18c-1.654 0-3 1.346-3 3v8.78c.532-.479 1.229-.78 2-.78v-6h20v14c0 .552-.449 1-1 1h-5v2h5c1.654 0 3-1.346 3-3v-16c0-1.654-1.346-3-3-3z"/><path d="m19.25 11c-.195 0-.387-.076-.53-.22l-2.5-2.5c-.214-.215-.279-.537-.163-.817s.39-.463.693-.463h2.5c.414 0 .75.336.75.75v2.5c0 .304-.183.577-.463.693-.093.038-.19.057-.287.057z"/></svg>
                 </button>
                 <img src="http://placehold.it/520x370" alt="photo">
-            </div>
-            <div class="photo-desk__photo">
+            </figure>
+            <figure class="photo-desk__photo">
                 <button class="like">
                     <svg xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -255,8 +250,8 @@
                     <svg id="bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m18.751 7.499c.192 0 .384.073.53.22.293.293.293.768 0 1.061l-3.001 3c-.293.293-.768.293-1.061 0s-.293-.768 0-1.061l3.001-3.001c.147-.146.339-.219.531-.219z"/><path d="m13 12h-11c-1.105 0-2 .895-2 2v8c0 1.105.895 2 2 2h11c1.105 0 2-.895 2-2v-8c0-1.105-.895-2-2-2zm-.5 10h-10c-.276 0-.5-.224-.5-.5v-5.5h11v5.5c0 .276-.224.5-.5.5z"/><path d="m21 0h-18c-1.654 0-3 1.346-3 3v8.78c.532-.479 1.229-.78 2-.78v-6h20v14c0 .552-.449 1-1 1h-5v2h5c1.654 0 3-1.346 3-3v-16c0-1.654-1.346-3-3-3z"/><path d="m19.25 11c-.195 0-.387-.076-.53-.22l-2.5-2.5c-.214-.215-.279-.537-.163-.817s.39-.463.693-.463h2.5c.414 0 .75.336.75.75v2.5c0 .304-.183.577-.463.693-.093.038-.19.057-.287.057z"/></svg>
                 </button>
                 <img src="http://placehold.it/350x420" alt="photo">
-            </div>
-            <div class="photo-desk__photo">
+            </figure>
+            <figure class="photo-desk__photo">
                 <button class="like">
                     <svg xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -269,8 +264,8 @@
                     <svg id="bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m18.751 7.499c.192 0 .384.073.53.22.293.293.293.768 0 1.061l-3.001 3c-.293.293-.768.293-1.061 0s-.293-.768 0-1.061l3.001-3.001c.147-.146.339-.219.531-.219z"/><path d="m13 12h-11c-1.105 0-2 .895-2 2v8c0 1.105.895 2 2 2h11c1.105 0 2-.895 2-2v-8c0-1.105-.895-2-2-2zm-.5 10h-10c-.276 0-.5-.224-.5-.5v-5.5h11v5.5c0 .276-.224.5-.5.5z"/><path d="m21 0h-18c-1.654 0-3 1.346-3 3v8.78c.532-.479 1.229-.78 2-.78v-6h20v14c0 .552-.449 1-1 1h-5v2h5c1.654 0 3-1.346 3-3v-16c0-1.654-1.346-3-3-3z"/><path d="m19.25 11c-.195 0-.387-.076-.53-.22l-2.5-2.5c-.214-.215-.279-.537-.163-.817s.39-.463.693-.463h2.5c.414 0 .75.336.75.75v2.5c0 .304-.183.577-.463.693-.093.038-.19.057-.287.057z"/></svg>
                 </button>
                 <img src="http://placehold.it/280x140" alt="photo">
-            </div>
-            <div class="photo-desk__photo">
+            </figure>
+            <figure class="photo-desk__photo">
                 <button class="like">
                     <svg xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -283,8 +278,8 @@
                     <svg id="bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m18.751 7.499c.192 0 .384.073.53.22.293.293.293.768 0 1.061l-3.001 3c-.293.293-.768.293-1.061 0s-.293-.768 0-1.061l3.001-3.001c.147-.146.339-.219.531-.219z"/><path d="m13 12h-11c-1.105 0-2 .895-2 2v8c0 1.105.895 2 2 2h11c1.105 0 2-.895 2-2v-8c0-1.105-.895-2-2-2zm-.5 10h-10c-.276 0-.5-.224-.5-.5v-5.5h11v5.5c0 .276-.224.5-.5.5z"/><path d="m21 0h-18c-1.654 0-3 1.346-3 3v8.78c.532-.479 1.229-.78 2-.78v-6h20v14c0 .552-.449 1-1 1h-5v2h5c1.654 0 3-1.346 3-3v-16c0-1.654-1.346-3-3-3z"/><path d="m19.25 11c-.195 0-.387-.076-.53-.22l-2.5-2.5c-.214-.215-.279-.537-.163-.817s.39-.463.693-.463h2.5c.414 0 .75.336.75.75v2.5c0 .304-.183.577-.463.693-.093.038-.19.057-.287.057z"/></svg>
                 </button>
                 <img src="http://placehold.it/350x230" alt="photo">
-            </div>
-            <div class="photo-desk__photo">
+            </figure>
+            <figure class="photo-desk__photo">
                 <button class="like">
                     <svg xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -297,8 +292,8 @@
                     <svg id="bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m18.751 7.499c.192 0 .384.073.53.22.293.293.293.768 0 1.061l-3.001 3c-.293.293-.768.293-1.061 0s-.293-.768 0-1.061l3.001-3.001c.147-.146.339-.219.531-.219z"/><path d="m13 12h-11c-1.105 0-2 .895-2 2v8c0 1.105.895 2 2 2h11c1.105 0 2-.895 2-2v-8c0-1.105-.895-2-2-2zm-.5 10h-10c-.276 0-.5-.224-.5-.5v-5.5h11v5.5c0 .276-.224.5-.5.5z"/><path d="m21 0h-18c-1.654 0-3 1.346-3 3v8.78c.532-.479 1.229-.78 2-.78v-6h20v14c0 .552-.449 1-1 1h-5v2h5c1.654 0 3-1.346 3-3v-16c0-1.654-1.346-3-3-3z"/><path d="m19.25 11c-.195 0-.387-.076-.53-.22l-2.5-2.5c-.214-.215-.279-.537-.163-.817s.39-.463.693-.463h2.5c.414 0 .75.336.75.75v2.5c0 .304-.183.577-.463.693-.093.038-.19.057-.287.057z"/></svg>
                 </button>
                 <img src="http://placehold.it/350x420" alt="photo">
-            </div>
-            <div class="photo-desk__photo">
+            </figure>
+            <figure class="photo-desk__photo">
                 <button class="like">
                     <svg xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -311,8 +306,8 @@
                     <svg id="bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m18.751 7.499c.192 0 .384.073.53.22.293.293.293.768 0 1.061l-3.001 3c-.293.293-.768.293-1.061 0s-.293-.768 0-1.061l3.001-3.001c.147-.146.339-.219.531-.219z"/><path d="m13 12h-11c-1.105 0-2 .895-2 2v8c0 1.105.895 2 2 2h11c1.105 0 2-.895 2-2v-8c0-1.105-.895-2-2-2zm-.5 10h-10c-.276 0-.5-.224-.5-.5v-5.5h11v5.5c0 .276-.224.5-.5.5z"/><path d="m21 0h-18c-1.654 0-3 1.346-3 3v8.78c.532-.479 1.229-.78 2-.78v-6h20v14c0 .552-.449 1-1 1h-5v2h5c1.654 0 3-1.346 3-3v-16c0-1.654-1.346-3-3-3z"/><path d="m19.25 11c-.195 0-.387-.076-.53-.22l-2.5-2.5c-.214-.215-.279-.537-.163-.817s.39-.463.693-.463h2.5c.414 0 .75.336.75.75v2.5c0 .304-.183.577-.463.693-.093.038-.19.057-.287.057z"/></svg>
                 </button>
                 <img src="http://placehold.it/280x140" alt="photo">
-            </div>
-            <div class="photo-desk__photo">
+            </figure>
+            <figure class="photo-desk__photo">
                 <button class="like">
                     <svg xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -325,8 +320,8 @@
                     <svg id="bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m18.751 7.499c.192 0 .384.073.53.22.293.293.293.768 0 1.061l-3.001 3c-.293.293-.768.293-1.061 0s-.293-.768 0-1.061l3.001-3.001c.147-.146.339-.219.531-.219z"/><path d="m13 12h-11c-1.105 0-2 .895-2 2v8c0 1.105.895 2 2 2h11c1.105 0 2-.895 2-2v-8c0-1.105-.895-2-2-2zm-.5 10h-10c-.276 0-.5-.224-.5-.5v-5.5h11v5.5c0 .276-.224.5-.5.5z"/><path d="m21 0h-18c-1.654 0-3 1.346-3 3v8.78c.532-.479 1.229-.78 2-.78v-6h20v14c0 .552-.449 1-1 1h-5v2h5c1.654 0 3-1.346 3-3v-16c0-1.654-1.346-3-3-3z"/><path d="m19.25 11c-.195 0-.387-.076-.53-.22l-2.5-2.5c-.214-.215-.279-.537-.163-.817s.39-.463.693-.463h2.5c.414 0 .75.336.75.75v2.5c0 .304-.183.577-.463.693-.093.038-.19.057-.287.057z"/></svg>
                 </button>
                 <img src="http://placehold.it/520x370" alt="photo">
-            </div>
-            <div class="photo-desk__photo">
+            </figure>
+            <figure class="photo-desk__photo">
                 <button class="like">
                     <svg xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -339,8 +334,8 @@
                     <svg id="bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m18.751 7.499c.192 0 .384.073.53.22.293.293.293.768 0 1.061l-3.001 3c-.293.293-.768.293-1.061 0s-.293-.768 0-1.061l3.001-3.001c.147-.146.339-.219.531-.219z"/><path d="m13 12h-11c-1.105 0-2 .895-2 2v8c0 1.105.895 2 2 2h11c1.105 0 2-.895 2-2v-8c0-1.105-.895-2-2-2zm-.5 10h-10c-.276 0-.5-.224-.5-.5v-5.5h11v5.5c0 .276-.224.5-.5.5z"/><path d="m21 0h-18c-1.654 0-3 1.346-3 3v8.78c.532-.479 1.229-.78 2-.78v-6h20v14c0 .552-.449 1-1 1h-5v2h5c1.654 0 3-1.346 3-3v-16c0-1.654-1.346-3-3-3z"/><path d="m19.25 11c-.195 0-.387-.076-.53-.22l-2.5-2.5c-.214-.215-.279-.537-.163-.817s.39-.463.693-.463h2.5c.414 0 .75.336.75.75v2.5c0 .304-.183.577-.463.693-.093.038-.19.057-.287.057z"/></svg>
                 </button>
                 <img src="http://placehold.it/350x420" alt="photo">
-            </div>
-            <div class="photo-desk__photo">
+            </figure>
+            <figure class="photo-desk__photo">
                 <button class="like">
                     <svg xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -353,8 +348,8 @@
                     <svg id="bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m18.751 7.499c.192 0 .384.073.53.22.293.293.293.768 0 1.061l-3.001 3c-.293.293-.768.293-1.061 0s-.293-.768 0-1.061l3.001-3.001c.147-.146.339-.219.531-.219z"/><path d="m13 12h-11c-1.105 0-2 .895-2 2v8c0 1.105.895 2 2 2h11c1.105 0 2-.895 2-2v-8c0-1.105-.895-2-2-2zm-.5 10h-10c-.276 0-.5-.224-.5-.5v-5.5h11v5.5c0 .276-.224.5-.5.5z"/><path d="m21 0h-18c-1.654 0-3 1.346-3 3v8.78c.532-.479 1.229-.78 2-.78v-6h20v14c0 .552-.449 1-1 1h-5v2h5c1.654 0 3-1.346 3-3v-16c0-1.654-1.346-3-3-3z"/><path d="m19.25 11c-.195 0-.387-.076-.53-.22l-2.5-2.5c-.214-.215-.279-.537-.163-.817s.39-.463.693-.463h2.5c.414 0 .75.336.75.75v2.5c0 .304-.183.577-.463.693-.093.038-.19.057-.287.057z"/></svg>
                 </button>
                 <img src="http://placehold.it/280x140" alt="photo">
-            </div>
-            <div class="photo-desk__photo">
+            </figure>
+            <figure class="photo-desk__photo">
                 <button class="like">
                     <svg xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -367,8 +362,8 @@
                     <svg id="bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m18.751 7.499c.192 0 .384.073.53.22.293.293.293.768 0 1.061l-3.001 3c-.293.293-.768.293-1.061 0s-.293-.768 0-1.061l3.001-3.001c.147-.146.339-.219.531-.219z"/><path d="m13 12h-11c-1.105 0-2 .895-2 2v8c0 1.105.895 2 2 2h11c1.105 0 2-.895 2-2v-8c0-1.105-.895-2-2-2zm-.5 10h-10c-.276 0-.5-.224-.5-.5v-5.5h11v5.5c0 .276-.224.5-.5.5z"/><path d="m21 0h-18c-1.654 0-3 1.346-3 3v8.78c.532-.479 1.229-.78 2-.78v-6h20v14c0 .552-.449 1-1 1h-5v2h5c1.654 0 3-1.346 3-3v-16c0-1.654-1.346-3-3-3z"/><path d="m19.25 11c-.195 0-.387-.076-.53-.22l-2.5-2.5c-.214-.215-.279-.537-.163-.817s.39-.463.693-.463h2.5c.414 0 .75.336.75.75v2.5c0 .304-.183.577-.463.693-.093.038-.19.057-.287.057z"/></svg>
                 </button>
                 <img src="http://placehold.it/350x230" alt="photo">
-            </div>
-            <div class="photo-desk__photo">
+            </figure>
+            <figure class="photo-desk__photo">
                 <button class="like">
                     <svg xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -381,8 +376,8 @@
                     <svg id="bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m18.751 7.499c.192 0 .384.073.53.22.293.293.293.768 0 1.061l-3.001 3c-.293.293-.768.293-1.061 0s-.293-.768 0-1.061l3.001-3.001c.147-.146.339-.219.531-.219z"/><path d="m13 12h-11c-1.105 0-2 .895-2 2v8c0 1.105.895 2 2 2h11c1.105 0 2-.895 2-2v-8c0-1.105-.895-2-2-2zm-.5 10h-10c-.276 0-.5-.224-.5-.5v-5.5h11v5.5c0 .276-.224.5-.5.5z"/><path d="m21 0h-18c-1.654 0-3 1.346-3 3v8.78c.532-.479 1.229-.78 2-.78v-6h20v14c0 .552-.449 1-1 1h-5v2h5c1.654 0 3-1.346 3-3v-16c0-1.654-1.346-3-3-3z"/><path d="m19.25 11c-.195 0-.387-.076-.53-.22l-2.5-2.5c-.214-.215-.279-.537-.163-.817s.39-.463.693-.463h2.5c.414 0 .75.336.75.75v2.5c0 .304-.183.577-.463.693-.093.038-.19.057-.287.057z"/></svg>
                 </button>
                 <img src="http://placehold.it/350x420" alt="photo">
-            </div>
-            <div class="photo-desk__photo">
+            </figure>
+            <figure class="photo-desk__photo">
                 <button class="like">
                     <svg xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -395,8 +390,8 @@
                     <svg id="bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m18.751 7.499c.192 0 .384.073.53.22.293.293.293.768 0 1.061l-3.001 3c-.293.293-.768.293-1.061 0s-.293-.768 0-1.061l3.001-3.001c.147-.146.339-.219.531-.219z"/><path d="m13 12h-11c-1.105 0-2 .895-2 2v8c0 1.105.895 2 2 2h11c1.105 0 2-.895 2-2v-8c0-1.105-.895-2-2-2zm-.5 10h-10c-.276 0-.5-.224-.5-.5v-5.5h11v5.5c0 .276-.224.5-.5.5z"/><path d="m21 0h-18c-1.654 0-3 1.346-3 3v8.78c.532-.479 1.229-.78 2-.78v-6h20v14c0 .552-.449 1-1 1h-5v2h5c1.654 0 3-1.346 3-3v-16c0-1.654-1.346-3-3-3z"/><path d="m19.25 11c-.195 0-.387-.076-.53-.22l-2.5-2.5c-.214-.215-.279-.537-.163-.817s.39-.463.693-.463h2.5c.414 0 .75.336.75.75v2.5c0 .304-.183.577-.463.693-.093.038-.19.057-.287.057z"/></svg>
                 </button>
                 <img src="http://placehold.it/520x370" alt="photo">
-            </div>
-            <div class="photo-desk__photo">
+            </figure>
+            <figure class="photo-desk__photo">
                 <button class="like">
                     <svg xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -409,18 +404,18 @@
                     <svg id="bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m18.751 7.499c.192 0 .384.073.53.22.293.293.293.768 0 1.061l-3.001 3c-.293.293-.768.293-1.061 0s-.293-.768 0-1.061l3.001-3.001c.147-.146.339-.219.531-.219z"/><path d="m13 12h-11c-1.105 0-2 .895-2 2v8c0 1.105.895 2 2 2h11c1.105 0 2-.895 2-2v-8c0-1.105-.895-2-2-2zm-.5 10h-10c-.276 0-.5-.224-.5-.5v-5.5h11v5.5c0 .276-.224.5-.5.5z"/><path d="m21 0h-18c-1.654 0-3 1.346-3 3v8.78c.532-.479 1.229-.78 2-.78v-6h20v14c0 .552-.449 1-1 1h-5v2h5c1.654 0 3-1.346 3-3v-16c0-1.654-1.346-3-3-3z"/><path d="m19.25 11c-.195 0-.387-.076-.53-.22l-2.5-2.5c-.214-.215-.279-.537-.163-.817s.39-.463.693-.463h2.5c.414 0 .75.336.75.75v2.5c0 .304-.183.577-.463.693-.093.038-.19.057-.287.057z"/></svg>
                 </button>
                 <img src="http://placehold.it/350x420" alt="photo">
-            </div>
+            </figure>
 
         </div>
         </section>
     </article>
-    <section class="some-button">
+
         <div class="container button-container">
             <button class="button-container__button">
                 View All
             </button>
         </div>
-    </section>
+
 
 </main>
 <footer class="footer">
@@ -439,7 +434,7 @@ Find Now
     <div class="footer-body">
 <div class="container">
     <div class="column">
-    <div class="logo">
+    <a href="/" class="logo">
 
         <img class="logo__image" src="images/logo.png" alt="logo">
         <div>
@@ -447,7 +442,7 @@ Find Now
             <p class="logo__description">
                 For Your Expectations</p>
         </div>
-    </div>
+    </a>
         <p class="footer-body__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum eligendi, error hic minima molestias natus non placeat quae sapiente temporibus totam velit. At dolorem dolorum ullam voluptates. Deleniti dolorum, laboriosam!</p>
         <a class="footer-body__link" href="#">Read More >></a>
         <p class="footer-body__title">Email Newsletters:</p>

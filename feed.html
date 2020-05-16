@@ -13,8 +13,8 @@
         <nav class="header-nav">
         <div class="container ">
             <div class="header-nav__togglerBlock">
-                <a href="#">
-                    <div class="logo">
+                <a href="#" class="logo">
+
 
                         <img class="logo__image" src="images/logo.png" alt="logo">
                         <div>
@@ -22,16 +22,15 @@
                             <p class="logo__description">
                                 For Your Expectations</p>
                         </div>
-                    </div>
+
                 </a>
                 <button class="header-nav__toggler">
                 </button>
             </div>
         <ul class="header-nav__list">
-            <li class="header-nav__item "><a href="index.html">Home</a></li>
+            <li class="header-nav__item "><a href="/">Home</a></li>
             <li class="header-nav__item active"><a href="#">Feed</a></li>
             <li class="header-nav__item"><a href="#">Find</a></li>
-            <li class="header-nav__item"><a href="#">Premium Features</a></li>
             <li class="header-nav__item"><a href="#">Profile</a></li>
     </ul>
         </div>
@@ -40,22 +39,20 @@
 </header>
 <main>
 
-    <section class="reviews feed-reviews">
-        <section>
-            <div class="breadcrumbs">
+    <article class="reviews feed-reviews">
+
+            <section class="breadcrumbs">
                 <div class="container">
                     <ul class="breadcrumbs-list">
-                        <li  class="breadcrumbs-list__item">Site Name Here</li>
-                        <li class="breadcrumbs-list__item">Home</li>
-                        <li class="breadcrumbs-list__item">Feed</li>
+                        <li class="breadcrumbs-list__item"><a href="feed.html">Feed</a></li>
                     </ul>
                 </div>
-            </div>
-        </section>
+            </section>
+
         <div class="title recomend">
-            <p class="title__heading ">
+            <h1 class="title__heading ">
                 Selection For You
-            </p>
+            </h1>
 
             <p class="title__description">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque cupiditate iste magni necessitatibus quas quos suscipit, voluptas voluptatum?
@@ -66,7 +63,7 @@
         </div>
         <div class="container personal-profiles-preview">
             <div class="card">
-                <div class="card__image">
+                <figure class="card__image">
                     <button class="like">
                         <svg xmlns="http://www.w3.org/2000/svg"
                              xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -84,10 +81,10 @@
                         </svg>
                     </button>
                     <img src="images/kal-visuals-b1Hg7QI-zcc-unsplash.jpg" alt="happy client">
-                </div>
+                </figure>
                 <div class="card__body">
                     <div class="card__body__author">
-                        <p class="card__body__author__name">Cirice</p> 23yo,
+                        <a href="profile.html" class="card__body__author__name">Cirice</a> 23yo,
                         New Orleans, <span>Hetero</span>
                     </div>
                     <p class="card__body__title">
@@ -117,7 +114,7 @@
                 </div>
             </div>
             <div class="card">
-                <div class="card__image">
+                <figure class="card__image">
                     <button class="like">
                         <svg xmlns="http://www.w3.org/2000/svg"
                              xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -135,10 +132,10 @@
                         </svg>
                     </button>
                     <img src="images/chema-photo-q0NfhcRc3v8-unsplash.jpg" alt="happy client">
-                </div>
+                </figure>
                 <div class="card__body">
                     <div class="card__body__author">
-                        <p class="card__body__author__name">Cirice</p> 23yo,
+                        <a href="profile.html" class="card__body__author__name">Cirice</a> 23yo,
                         New Orleans, <span>Hetero</span>
                     </div>
                     <p class="card__body__title liked">
@@ -168,7 +165,7 @@
                 </div>
             </div>
             <div class="card">
-                <div class="card__image">
+                <figure class="card__image">
                     <button class="like">
                         <svg xmlns="http://www.w3.org/2000/svg"
                              xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -186,10 +183,10 @@
                         </svg>
                     </button>
                     <img src="images/garin-chadwick-1SKjtoZqwBo-unsplash.jpg" alt="happy client">
-                </div>
+                </figure>
                 <div class="card__body">
                     <div class="card__body__author">
-                        <p class="card__body__author__name">Cirice</p> 23yo,
+                        <a href="profile.html" class="card__body__author__name">Cirice</a> 23yo,
                         New Orleans, <span>Hetero</span>
                     </div>
                     <p class="card__body__title">
@@ -219,7 +216,7 @@
                 </div>
             </div>
             <div class="card">
-                <div class="card__image">
+                <figure class="card__image">
                     <button class="like">
                         <svg xmlns="http://www.w3.org/2000/svg"
                              xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -237,10 +234,10 @@
                         </svg>
                     </button>
                     <img src="images/brooke-cagle-NoRsyXmHGpI-unsplash.jpg" alt="happy client">
-                </div>
+                </figure>
                 <div class="card__body">
                     <div class="card__body__author">
-                        <p class="card__body__author__name">Cirice</p> 23yo,
+                        <a href="profile.html" class="card__body__author__name">Cirice</a> 23yo,
                         New Orleans, <span>Hetero</span>
                     </div>
                     <p class="card__body__title">
@@ -275,15 +272,15 @@
                 View All
             </button>
         </div>
-    </section>
+    </article>
     <section class="underhead">
         <div class="container">
-            <p class="underhead__title">Latest Post</p>
+            <h2 class="underhead__title">Latest Posts</h2>
         </div>
     </section>
     <article class="article">
 <div class="container">
-    <div class="article__image">
+    <figure class="article__image">
         <button class="like">
             <svg xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -301,11 +298,11 @@
             </svg>
         </button>
     <img src="images/michael-dam-mEZ3PoFGs_k-unsplash.jpg" alt="portrait">
-    </div>
-    <div class="article__caption">
-        <p class="article__caption__title">
+    </figure>
+    <aside class="article__aside">
+        <h2 class="article__aside__title">
             Britney Doe
-        </p>
+        </h2>
         <p class="personal-info">26 yo. <br>
             Kansas City,
             Missouri <br>
@@ -326,12 +323,12 @@
                 View Profile
             </a>
         </div>
-    </div>
+    </aside>
 </div>
     </article>
-    <article class="article article-reverse">
+    <article class="article article_reverse">
 <div class="container">
-    <div class="article__image">
+    <figure class="article__image">
         <button class="like">
             <svg xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -349,9 +346,9 @@
             </svg>
         </button>
     <img src="images/toa-heftiba-O3ymvT7Wf9U-unsplash.jpg" alt="couple">
-    </div>
-    <div class="article__caption">
-        <p class="article__caption__title">
+    </figure>
+    <aside class="article__aside">
+        <p class="article__aside__title">
             Liza Smith
         </p>
         <p class="personal-info">26 yo. <br>
@@ -374,12 +371,12 @@
                 View Profile
             </a>
         </div>
-    </div>
+    </aside>
 </div>
     </article>
     <article class="article">
         <div class="container">
-            <div class="article__image">
+            <figure class="article__image">
                 <button class="like">
                     <svg xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -397,9 +394,9 @@
                     </svg>
                 </button>
             <img src="images/rayul-_M6gy9oHgII-unsplash.jpg" alt="couple">
-            </div>
-            <div class="article__caption">
-                <p class="article__caption__title">
+            </figure>
+            <aside class="article__aside">
+                <p class="article__aside__title">
                     Ben Solo
                 </p>
                 <p class="personal-info">26 yo. <br>
@@ -422,16 +419,16 @@
                         View Profile
                     </a>
                 </div>
-            </div>
+            </aside>
         </div>
     </article>
-    <section class="some-button">
+
         <div class="container button-container">
             <button class="button-container__button">
 Load More
             </button>
         </div>
-    </section>
+
 
 </main>
 <footer class="footer">
@@ -450,7 +447,7 @@ Find Now
     <div class="footer-body">
 <div class="container">
     <div class="column">
-    <div class="logo">
+    <a href="index.html" class="logo">
 
         <img class="logo__image" src="images/logo.png" alt="logo">
         <div>
@@ -458,7 +455,7 @@ Find Now
             <p class="logo__description">
                 For Your Expectations</p>
         </div>
-    </div>
+    </a>
         <p class="footer-body__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum eligendi, error hic minima molestias natus non placeat quae sapiente temporibus totam velit. At dolorem dolorum ullam voluptates. Deleniti dolorum, laboriosam!</p>
         <a class="footer-body__link" href="#">Read More >></a>
         <p class="footer-body__title">Email Newsletters:</p>
