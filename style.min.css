@@ -433,11 +433,22 @@ header {
     position: fixed;
     z-index: 99;
     top: 0;
-    -webkit-transition: ease 0.3s;
-    -o-transition: ease 0.3s;
-    transition: ease 0.3s;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
     width: 100vw;
     background: #cca0ff; }
+    header .header-nav.show {
+      height: 250px !important; }
+      header .header-nav.show .header-nav__list {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        opacity: 1;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none; }
     header .header-nav__list {
       width: 100%;
       display: -webkit-box;
@@ -453,9 +464,9 @@ header {
       -ms-flex-pack: end;
       justify-content: flex-end;
       margin-bottom: 0;
-      -webkit-transition: ease 0.3s;
-      -o-transition: ease 0.3s;
-      transition: ease 0.3s; }
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
     header .header-nav__item {
       margin-bottom: 0;
       margin-right: 40px;
@@ -464,9 +475,9 @@ header {
       font-weight: 700; }
       header .header-nav__item a {
         color: white;
-        -webkit-transition: ease 0.3s;
-        -o-transition: ease 0.3s;
-        transition: ease 0.3s; }
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
       header .header-nav__item:hover a, header .header-nav__item.active a {
         color: #0c0c0c; }
       header .header-nav__item:last-child {
@@ -680,9 +691,9 @@ header {
     font-family: "Lobster Two";
     font-size: 30px;
     color: white;
-    -webkit-transition: ease 0.3s;
-    -o-transition: ease 0.3s;
-    transition: ease 0.3s; }
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
     .join__button:hover {
       border-color: #320d6e;
       background: #320d6e; }
@@ -702,9 +713,9 @@ header {
     .article__image img {
       height: 400px;
       width: auto;
-      -webkit-transition: ease 0.3s;
-      -o-transition: ease 0.3s;
-      transition: ease 0.3s; }
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
     .article__image:hover img {
       -webkit-filter: brightness(0.5);
       filter: brightness(0.5); }
@@ -783,9 +794,9 @@ header {
     background: rgba(24, 6, 24, 0.4);
     border: none;
     padding: 15px 30px;
-    -webkit-transition: ease 0.3s;
-    -o-transition: ease 0.3s;
-    transition: ease 0.3s; }
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
     .button-container__button:hover, .read-more:hover {
       background: rgba(24, 6, 24, 0.8);
       color: white; }
@@ -842,9 +853,9 @@ header {
       width: 100%;
       -webkit-filter: grayscale(1);
       filter: grayscale(1);
-      -webkit-transition: ease 0.3s;
-      -o-transition: ease 0.3s;
-      transition: ease 0.3s; }
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
   .card__body {
     display: -webkit-box;
     display: -webkit-flex;
@@ -861,17 +872,17 @@ header {
     align-items: stretch;
     background: #e1fcff;
     border-radius: 0 0 5px 5px;
-    -webkit-transition: ease 0.3s;
-    -o-transition: ease 0.3s;
-    transition: ease 0.3s; }
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
     .card__body__author {
       background: rgba(24, 6, 24, 0.1);
       font-family: "Noto Sans JP";
       font-size: 17px;
       color: #363636;
-      -webkit-transition: ease 0.3s;
-      -o-transition: ease 0.3s;
-      transition: ease 0.3s;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
       padding: 5px 15px; }
       .card__body__author__name {
         color: #cca0ff;
@@ -898,14 +909,19 @@ header {
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
-      justify-content: center;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
       margin-bottom: 20px; }
       .card__body__button button,
       .card__body__button a {
-        padding: 0; }
+        padding: 0;
+        margin-bottom: 20px; }
+      .card__body__button .read-more svg {
+        height: 70%; }
     .card__body__subtitle {
       display: -webkit-box;
       display: -webkit-flex;
@@ -949,6 +965,12 @@ header {
   font-size: 15px;
   height: 35px;
   white-space: nowrap; }
+  .read-more svg {
+    height: 100%;
+    fill: white;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
 
 .footer {
   background: #363636; }
@@ -985,15 +1007,15 @@ header {
       -ms-flex-align: center;
       align-items: center;
       color: #685f68;
-      -webkit-transition: ease 0.3s;
-      -o-transition: ease 0.3s;
-      transition: ease 0.3s;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
       margin-bottom: 10px; }
       .footer-body__link svg {
         fill: #3f3940;
-        -webkit-transition: ease 0.3s;
-        -o-transition: ease 0.3s;
-        transition: ease 0.3s;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
         width: 20px;
         margin-right: 20px; }
       .footer-body__link:hover {
@@ -1036,9 +1058,9 @@ header {
 
 .follow-us-link {
   fill: #685f68;
-  -webkit-transition: ease 0.3s;
-  -o-transition: ease 0.3s;
-  transition: ease 0.3s; }
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
   .follow-us-link:hover {
     fill: #cca0ff; }
 
@@ -1062,9 +1084,9 @@ header {
   margin-top: -20px;
   position: absolute;
   z-index: 9;
-  -webkit-transition: ease 0.3s;
-  -o-transition: ease 0.3s;
-  transition: ease 0.3s;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
   background: transparent;
   fill: white;
   border: none; }
@@ -1092,7 +1114,7 @@ header {
   .personal-profiles-preview .card__body__text {
     text-align: left; }
 
-button.on-map {
+button.to-map {
   background: transparent;
   border: none;
   display: -webkit-box;
@@ -1107,21 +1129,9 @@ button.on-map {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center; }
-  button.on-map img {
+  button.to-map img {
     width: 40px;
     height: 40px; }
-
-.show {
-  height: 250px !important; }
-  .show .header-nav__list {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    opacity: 1;
-    -webkit-transform: none;
-    -ms-transform: none;
-    transform: none; }
 
 .hide {
   -webkit-transform: translateY(-100%);
@@ -1161,9 +1171,9 @@ main {
     position: relative;
     margin-bottom: 20px; }
     .photo-desk__photo img {
-      -webkit-transition: ease 0.3s;
-      -o-transition: ease 0.3s;
-      transition: ease 0.3s;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
       width: 100%;
       height: auto;
       margin: 0; }
@@ -1203,4 +1213,55 @@ main {
       margin-right: 12px; }
 
 #map {
-  height: 400px; }
+  height: 400px;
+  margin-top: 30px; }
+
+.about-person {
+  background: rgba(24, 6, 24, 0.4); }
+
+.about-person {
+  /*max-height: 0px;*/
+  padding: 30px 0;
+  margin: 30px 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .about-person.show {
+    max-height: auto;
+    display: block;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none; }
+  .about-person__interests {
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    .about-person__interests figure {
+      margin: 20px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
+    .about-person__interests img {
+      width: 60px; }
+  .about-person__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 30px; }
+  .about-person .personal-info {
+    font-size: 25px;
+    margin-bottom: 10px; }
+    .about-person .personal-info span {
+      color: #6c757d; }

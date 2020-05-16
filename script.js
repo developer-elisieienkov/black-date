@@ -1,13 +1,17 @@
 "use strict";
 
-var toggler = document.querySelector(".header-nav__toggler");
+var navToggler = document.querySelector(".header-nav__toggler");
 var navbar = document.querySelector(".header-nav");
 var lastScroll;
 
-toggler.onclick = function () {
-  navbar.classList.toggle("show");
-};
+function showToggler(togleButton, targetElem, toglingClass) {
+  togleButton.onclick = function () {
+    targetElem.classList.toggle(toglingClass);
+  };
+}
 
+showToggler(navToggler, navbar, "show");
+showToggler(allInfo, aboutPerson, "show");
 document.addEventListener("scroll", scrollHide);
 document.addEventListener("resize", scrollHide);
 
