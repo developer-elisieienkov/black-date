@@ -4,18 +4,32 @@ var navToggler = document.querySelector(".header-nav__toggler"),
     navbar = document.querySelector(".header-nav"),
     profileCollapsibleSection = document.getElementById("aboutPerson"),
     profileCollapsingButton = document.getElementById("allInfo"),
-    lastScroll;
+    lastScroll,
+    age = document.querySelectorAll(".ageSelector");
 
-function showToggler(togleButton, targetElem, toglingClass) {
+function showToggler(togleButton, targetElem, toglingClass, currentText, modifiedText) {
   togleButton.onclick = function () {
     targetElem.classList.toggle(toglingClass);
+
+    if (currentText != undefined) {
+      if (targetElem.classList.contains("show")) {
+        togleButton.innerHTML = modifiedText;
+      } else {
+        togleButton.innerHTML = currentText;
+      }
+    }
   };
 }
 
+function textTogler(elem, currentText, modifiedText) {
+  elem.onclick = function () {};
+}
+
+;
 showToggler(navToggler, navbar, "show");
 
 if (profileCollapsibleSection != undefined) {
-  showToggler(profileCollapsingButton, profileCollapsibleSection, "show");
+  showToggler(profileCollapsingButton, profileCollapsibleSection, "show", "More", "Less");
 }
 
 ;
@@ -34,6 +48,16 @@ function scrollHide() {
   }
 
   lastScroll = secondScroll;
+}
+
+if (age != undefined) {
+  age.forEach(function (selectTag) {
+    for (var i = 0; i < 90; i++) {
+      var ageOtion = document.createElement('option');
+      ageOtion.innerHTML = "".concat(i + 1);
+      selectTag.append(ageOtion);
+    }
+  });
 }
 
 var map;
